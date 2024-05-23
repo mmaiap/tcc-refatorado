@@ -2,6 +2,7 @@ package com.unifacisa.tcc.service;
 
 import com.unifacisa.tcc.persistence.entity.veiculos.*;
 import com.unifacisa.tcc.persistence.repository.VeiculoRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -10,6 +11,7 @@ import java.sql.SQLException;
 @Service
 public class VeiculoService implements VeiculoCombustaoCalculos {
 
+    @Autowired
     private VeiculoRepository repository;
 
     @Override

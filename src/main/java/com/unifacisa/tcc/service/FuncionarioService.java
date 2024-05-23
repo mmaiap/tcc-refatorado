@@ -3,6 +3,7 @@ package com.unifacisa.tcc.service;
 import com.unifacisa.tcc.api.dto.FuncionarioDTO;
 import com.unifacisa.tcc.persistence.entity.pessoa.colaborador.Funcionario;
 import com.unifacisa.tcc.persistence.repository.FuncionarioRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.sql.SQLException;
@@ -10,6 +11,7 @@ import java.sql.SQLException;
 @Service
 public class FuncionarioService  {
 
+    @Autowired
     private FuncionarioRepository repository;
 
     public Funcionario adicionarColaborador(Funcionario funcionario){

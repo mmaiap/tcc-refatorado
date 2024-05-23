@@ -3,18 +3,18 @@ package com.unifacisa.tcc.persistence.repository;
 import com.unifacisa.tcc.api.dto.FuncionarioDTO;
 import com.unifacisa.tcc.persistence.entity.pessoa.colaborador.CARGO_FUNCIONARIO;
 import com.unifacisa.tcc.persistence.entity.pessoa.colaborador.Funcionario;
-import org.springframework.stereotype.Repository;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.math.BigDecimal;
 import java.sql.*;
 import java.time.LocalDate;
 import java.util.Optional;
 
-@Repository
 public class FuncionarioRepositoryImpl implements FuncionarioRepository {
 
     private Connection connection;
 
+    @Autowired
     public FuncionarioRepositoryImpl(Connection connection) {
         this.connection = connection;
     }

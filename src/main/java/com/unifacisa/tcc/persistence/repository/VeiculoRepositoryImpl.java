@@ -4,7 +4,6 @@ import com.unifacisa.tcc.persistence.entity.veiculos.Carro;
 import com.unifacisa.tcc.persistence.entity.veiculos.CarroEletrico;
 import com.unifacisa.tcc.persistence.entity.veiculos.Moto;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 
 import java.math.BigDecimal;
 import java.sql.Connection;
@@ -13,7 +12,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Optional;
 
-@Repository
 public class VeiculoRepositoryImpl implements VeiculoRepository{
 
     private Connection connection;
