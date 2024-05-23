@@ -1,0 +1,1 @@
+{"refatorado-solid":{"name":"refatorado-solid","packages":{"com.unifacisa.tcc.service":{"packageName":"com.unifacisa.tcc.service","isAll":false,"classes":["Lcom.unifacisa.tcc.service.NotificacaoService"]}}}}
