@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Component
-public class FinanceiroFuncionarioFactory implements AbstractFinanceiroFactory {
+public class FinanceiroFuncionarioFactory implements FinanceiroFactory {
 
     private static final Map<CARGO_FUNCIONARIO, FinanceiroFuncionario> services = new HashMap<>();
 

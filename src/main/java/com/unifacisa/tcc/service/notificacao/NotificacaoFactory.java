@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Component
-public class NotificacaoFactory implements AbstractComunicacaoFactory {
+public class NotificacaoFactory implements ComunicacaoFactory {
 
     private static final Map<TIPO_NOTIFICACAO, NotificacaoService> services = new HashMap<>();
 
